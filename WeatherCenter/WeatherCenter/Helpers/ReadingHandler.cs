@@ -34,7 +34,7 @@ namespace WeatherCenter.Helpers
                     using (
                         SqlCommand command =
                             new SqlCommand(
-                                "SELECT TOP " + items + " [TempSensor1] ,[TempSensor2] ,[TempSensor3] ,[TempSensorAvg] ,[Humidity] ,[Pressure] ,[Altitude] ,[SeaLevelPressure] ,[Lux] ,[TimeStamp] FROM [[DATABASE]].[dbo].[Reading] ORDER BY ID DESC ", _sqlConnection))
+                                "SELECT TOP " + items + " [TempSensor1] ,[TempSensor2] ,[TempSensor3] ,[TempSensorAvg] ,[Humidity] ,[Pressure] ,[Altitude] ,[SeaLevelPressure] ,[Lux] ,[TimeStamp] FROM [rpi_mini_weather].[dbo].[Reading] ORDER BY ID DESC ", _sqlConnection))
                     {
                         //
                         // Invoke ExecuteReader method.
